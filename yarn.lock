@@ -32,6 +32,12 @@ dtrace-provider@~0.8:
   dependencies:
     nan "^2.3.3"
 
+file-stream-rotator@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/file-stream-rotator/-/file-stream-rotator-0.0.7.tgz#48c0e5820b6223e79cbc599f956222946b48fb4e"
+  dependencies:
+    moment "^2.11.2"
+
 glob@^6.0.1:
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
@@ -69,7 +75,7 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@^2.10.6:
+moment@^2.10.6, moment@^2.11.2:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
