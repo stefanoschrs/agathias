@@ -4,9 +4,12 @@
   "description": "Bunyan Wrapper",
   "dependencies": {
     "bunyan": "^1.8.5",
-    "file-stream-rotator": "^0.0.7"
+    "file-stream-rotator": "^0.0.7",
+    "morgan": "^1.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "express": "^4.14.1"
+  },
   "main": "./lib/index.js",
   "scripts": {
     "test": "node lib/index.spec.js"
