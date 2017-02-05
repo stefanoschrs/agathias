@@ -2,12 +2,25 @@
   "name": "bunyan-wrapper",
   "version": "0.0.1",
   "description": "Bunyan Wrapper",
-  "main": "index.js",
-  "repository": "git@github.com:stefanoschrs/bunyan-wrapper.git",
-  "author": "Stefanos Chrs <stefanoschrs@hotmail.com>",
-  "license": "MIT",
   "dependencies": {
     "bunyan": "^1.8.5",
     "file-stream-rotator": "^0.0.7"
-  }
+  },
+  "devDependencies": {},
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "node lib/index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github:stefanoschrs/bunyan-wrapper.git"
+  },
+  "keywords": [
+    "bunyan",
+    "logging",
+    "nodejs",
+    "express"
+  ],
+  "author": "Stefanos Chrs <stefanoschrs@hotmail.com>",
+  "license": "MIT"
 }
