@@ -1,7 +1,7 @@
 {
-  "name": "bunyan-wrapper",
+  "name": "agathias",
   "version": "0.0.1",
-  "description": "Bunyan Wrapper",
+  "description": "Another Logging Library",
   "dependencies": {
     "bunyan": "^1.8.5",
     "file-stream-rotator": "^0.0.7",
@@ -12,14 +12,15 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "test": "node lib/index.spec.js"
+    "test": "standard && node lib/index.spec.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github:stefanoschrs/bunyan-wrapper.git"
+    "url": "git@github:stefanoschrs/agathias.git"
   },
   "keywords": [
     "bunyan",
+    "morgan",
     "logging",
     "nodejs",
     "express"
