@@ -8,11 +8,12 @@
     "morgan": "^1.8.0"
   },
   "devDependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "standard": "^8.6.0"
   },
   "main": "./lib/index.js",
   "scripts": {
-    "test": "standard && node test/*"
+    "test": "node_modules/.bin/standard && node test/*"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
     "morgan",
     "logging",
     "nodejs",
-    "express"
+    "express",
+    "standardjs"
   ],
   "author": "Stefanos Chrs <stefanoschrs@hotmail.com>",
   "license": "MIT"
