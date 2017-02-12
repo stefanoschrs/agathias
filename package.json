@@ -1,6 +1,6 @@
 {
   "name": "agathias",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Another Logging Library",
   "dependencies": {
     "bunyan": "^1.8.5",
@@ -12,7 +12,7 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "test": "standard && node lib/index.spec.js"
+    "test": "standard && node test/*"
   },
   "repository": {
     "type": "git",

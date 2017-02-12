@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const agathias = require(`${__dirname}/../lib`)
 
