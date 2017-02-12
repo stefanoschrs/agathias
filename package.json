@@ -13,7 +13,7 @@
   },
   "main": "./lib/index.js",
   "scripts": {
-    "test": "node_modules/.bin/standard && node test/*"
+    "test": "node_modules/.bin/standard && ./test/all.sh"
   },
   "repository": {
     "type": "git",
