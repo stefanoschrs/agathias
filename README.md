@@ -22,66 +22,80 @@ Easy to use logging
 ### Usage
 1. Simple Case
 ```javascript
-const agathias = require('agathias')
+const logger = require('agathias')
 
-agathias
-  .init()
-  .then(() => agathias.debug('Hello'))
+logger.info('Hello')
+logger.debug('World')
+```
+
+2. Simple Case w/ config
+```javascript
+const logger = require('agathias')
+const config = {
+  appName: 'Simple App'
+}
+
+logger
+  .init(config)
+  .then(() => logger.debug('Hello'))
   .catch(console.error)
 ```
-2. File Case
+
+3. File Case
 ```javascript
-const agathias = require('agathias')
+const logger = require('agathias')
 const config = {
   file: true,
   fileName: 'my-app-file-case.log',
-  logDir: '/tmp',
+  logDir: '/tmp', // Path must have an absolute value, you can use __dirname
 }
 
-agathias
+logger
   .init(config)
-  .then(() => agathias.debug('Hello'))
+  .then(() => logger.debug('Hello'))
   .catch(console.error)
 ```
-3. Middleware Case (ExpressJS)
+
+4. Middleware Case (ExpressJS)
 ```javascript
 const http = require('http')
 const express = require('express')
-const agathias = require('agathias')
+const logger = require('agathias')
 const app = express()
-agathias
+
+logger
   .init({
     logDir: '/tmp'
   })
   .then(() => {
-    app.use(agathias.getMiddleware(true))
+    app.use(logger.getMiddleware(true))
     app.get('/', (req, res) => res.send('Hello World'))
-    
+
     let server = app.listen(process.env.PORT || 5000)
     http.get('http://0.0.0.0:5000/no', (res) => {
       let data = ''
       res.on('data', (chunk) => data += chunk)
       res.on('end', () => server.close())
     })
-})
-.catch(console.error)
-```
-4. Group logs by 'children'
-```javascript
-const agathias = require('agathias')
-
-agathias
-  .init()
-  .then(() => {
-    agathias.debug('Hello')
-    const childNode1 = agathias.getChild('testing')
-	childNode1.debug('Hello')
-    const childNode2 = agathias.getChild('this is real')
-	childNode2.debug('World')
   })
   .catch(console.error)
 ```
 
+5. Group logs by 'children'
+```javascript
+const logger = require('agathias')
+
+logger
+  .init()
+  .then(() => {
+    logger.debug('Hello')
+    const childNode1 = logger.getChild('testing')
+	childNode1.debug('Hello')
+    const childNode2 = logger.getChild('this is real')
+	childNode2.debug('World')
+  })
+  .catch(console.error)
+```
 
 ### Features
 * Seamless integration with log rotate

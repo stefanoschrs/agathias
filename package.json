@@ -1,6 +1,6 @@
 {
   "name": "agathias",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Another Logging Library",
   "dependencies": {
     "bunyan": "^1.8.5",
@@ -8,7 +8,9 @@
     "morgan": "^1.8.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "express": "^4.14.1",
+    "mocha": "^3.2.0",
     "standard": "^8.6.0"
   },
   "main": "./lib/index.js",
