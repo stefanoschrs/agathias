@@ -1,5 +1,5 @@
 <h1 align="center">
-  Agathias
+  <img src="https://github.com/stefanoschrs/agathias/blob/master/assets/logo.png" alt="Agathias">
 </h1>
 
 <p align="center">
