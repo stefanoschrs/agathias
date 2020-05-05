@@ -3,15 +3,15 @@
   "version": "0.0.3",
   "description": "Another Logging Library",
   "dependencies": {
-    "bunyan": "^1.8.5",
-    "file-stream-rotator": "^0.0.7",
-    "morgan": "^1.8.0"
+    "bunyan": "^1.8.12",
+    "file-stream-rotator": "^0.5.7",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "express": "^4.14.1",
-    "mocha": "^3.2.0",
-    "standard": "^8.6.0"
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^7.1.2",
+    "standard": "^14.3.3"
   },
   "main": "./lib/index.js",
   "scripts": {
